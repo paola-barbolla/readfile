@@ -11,8 +11,7 @@ fs.readFile("prova.txt", "utf-8", (err, data) => {
 })
 
 //lettura sincrona
-let file = fs.readFileSync("prova1.txt", "utf-8")
-console.log(file)
+console.log(fs.readFileSync("prova1.txt", "utf-8"))
 
 //lettura asincrona con promisify
 const readFile = util.promisify(fs.readFile)
